@@ -23,7 +23,6 @@ fn main() {
 
         result[temp_idx] = cur;
     }
-    for element in result {
-        print!("{} ", element);
-    }
+    let answer_str: Vec<String> = result.into_iter().map(|x| x.to_string()).collect();
+    println!("{}", answer_str.join(" "));
 }
